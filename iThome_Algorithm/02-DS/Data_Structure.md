@@ -35,3 +35,24 @@
 * 根據佇列先進先出的特性，進行兩種操作
    * enqueue：由最後端添加資料
    * dequeue：由最前端刪除資料
+## Hash Table
+* Hash這個詞在電腦科學中很常見，將一組值轉換成另一組，是一種加密技術。
+* 若hash後有兩組資料位置相同，此時產生的情況稱為Collision。
+### 一般常見的Hash Function有兩種: Dicision method and Multiplication Method
+* Divisiion method
+   * 優點:速度快
+   * 缺點: 使用2的次方進行運算容易出現衝突現象
+   * 公式: ```index = key mod m```
+* Multiplication method
+   * 公式: ```index = [m(keyA%1)]```
+   * A是無理數
+   * mod1將整數去除，得到0<p<1
+* 透過實作可發現文字每次hash後的值都不同，相反的數字則維持   
+```python
+x = hash("a")
+print(x) #963309178111316638
+y = hash(8823748)
+print(y) #8823748
+z = hash(str([1,2,3]))
+print(z) #6529461775645613167
+```
