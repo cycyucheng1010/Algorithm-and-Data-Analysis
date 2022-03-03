@@ -92,3 +92,69 @@ for i in range(1, 9):
         print(item,' ',end="")
 print()
 ```
+### Merge Sort
+* Divide and conquer（分而治之法）
+* 將一個無序的資料結構，排序為從大到小的array。先將array從中間切割，再將切割後的資料進行切割，直到兩兩進行比對，比對後進行由右到左，由小到大的排序，最後再將排序後的資料進行組合。
+* 更有效率的演算法（所耗費的時間複雜度為n log(n))
+* 並行性
+
+![image](https://user-images.githubusercontent.com/62127656/156573717-11abb6db-2252-4dda-81b8-f47ec48e90dc.png)
+
+```python 
+import random
+
+#從1-100中隨機讀取8個數字
+nums = random.sample(range(1,100), 8)
+print('origin data:',nums)
+tmp = [0,0,0,0,0,0,0,0]
+
+#將資料分成兩個部分:L(left)+R(right)
+def merge(L, M, R):
+    #left：目前左半部執行到第幾個element，L為初始值
+    left = L
+    #right：目前右半部執行到第幾個element，M+1為初始值
+    right = M+1
+    #i：merge後暫存tmp的索引值，L為初始值
+    i = L
+    while (left <= M) and (right <= R):
+        if nums[left]<nums[right]:
+            tmp[i]=nums[left]
+            left = left+1
+        else:
+            tmp[i]=nums[right]
+            right = right+1
+        i = i+1
+    while left <= M:
+        tmp[i] = nums[left]
+        i = i+1
+        left = left +1
+    while right <= R:
+        tmp[i]=nums[right]
+        i = i + 1
+        right = right +1
+    for i in range(L, R+1):
+        nums[i]=tmp[i]
+
+#Recursion
+def mergesort(L,R):
+    if L < R:
+        M = (L+R)//2
+        mergesort(L, M)
+        mergesort(M+1, R)
+        merge(L, M, R)
+        print("\nL=",L,"M=",M,"R=",R,'\t',end='')
+        for item in nums:
+            print(item,' ',end='')
+
+mergesort(0,7)
+print()
+```
+### quick sort
+* 從數列中隨機選擇一個數作為基準(Pivot)，接著將剩下的數字分為比Pivot小或比Pivot大的值。
+
+![image](https://user-images.githubusercontent.com/62127656/156574034-f2893c34-9d0b-48e2-aa6c-05798df5dc18.png)
+
+```python
+
+```
+
