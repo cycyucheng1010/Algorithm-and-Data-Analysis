@@ -56,3 +56,20 @@ print(y) #8823748
 z = hash(str([1,2,3]))
 print(z) #6529461775645613167
 ```
+## Binary tree
+* 二元樹可以為空集合
+* 每 1 個節點最多只有 2 個子節點，左節點與右節點
+* 有次序關係，左節點會排在右節點之前，不能顛倒
+### Complete Tree
+* 一個高度為 h ，節點數量小2^h-1例如：一個高度(Height)為 3 的二元樹，節點小於 7 個
+由上到下，由左至右都跟完滿二元樹一一對應
+![image](https://user-images.githubusercontent.com/62127656/156524328-86f5469d-c053-46c5-b06b-c2857133e9bb.png)
+
+### Full Tree
+* 最後一層的節點數為0 or 2
+
+![image](https://user-images.githubusercontent.com/62127656/156524345-e85bcd03-c570-4000-bb82-e7319df622c2.png)
+
+## Heap
+* 根據大小進行排序並可表示成array型式，可參考下圖
+![image](https://user-images.githubusercontent.com/62127656/156524787-cbfaab78-5749-4feb-bc30-3e02ec5be44a.png)
