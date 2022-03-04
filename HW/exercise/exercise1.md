@@ -53,6 +53,7 @@ for( i=0 ' i<6 ; i++)
 ```
    * my ans:
    ```c
+   int i=0;
    do {
         counter++;
         i++;
