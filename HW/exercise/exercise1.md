@@ -55,7 +55,7 @@ for( i=0 ' i<6 ; i++)
    ```
 12. 用迴圈寫一個C語言的費氏數列
    * my ans
-    ```c
+```c
     #include<stdio.h>
 
 int main(void){
@@ -82,4 +82,4 @@ int main(void){
     printf("f(n)=%d\n",fib);
     return 0;
 }
-    ```
+```
