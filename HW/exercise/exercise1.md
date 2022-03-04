@@ -23,6 +23,11 @@
 7. 簡述資料結構的定義?
    * 將各種資料組織結構化後，作為一個個體來使用
 8. 演算法的定義及重要特性?
+   * 是一個解決問題，並且用來達到目的方法。
+   
+   ![image](https://user-images.githubusercontent.com/62127656/156825932-807b46a2-afc6-4f77-a861-d42d55688295.png)
+
+   
 9. what is the relationship between a program and an algrithm?
    * prigrams = algrithms + data structures
 10. Determine what the following flow graph computes?
