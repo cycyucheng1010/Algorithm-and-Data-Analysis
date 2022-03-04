@@ -21,10 +21,26 @@
 
 
 7. 簡述資料結構的定義?
-   * 
+   * 將各種資料組織結構化後，作為一個個體來使用
 8. 演算法的定義及重要特性?
 9. what is the relationship between a program and an algrithm?
+   * prigrams = algrithms + data structures
 10. Determine what the following flow graph computes?
+
+![image](https://user-images.githubusercontent.com/62127656/156815931-6743f55f-52ce-4992-9210-80d010acb01d.png)
+
+   * (a) when n=5 , value of output = 10
+   * (b) when n=100, value of output= 4950
+   * (c) ```f(n ) = 1*2*3....*(n-1)*n for n = 1,2,.....```
+   ```mermaid
+  flowchart TD
+  input[/input/]--> begin(i equal 1 and out equal 1)
+  begin(i equal 1 and out equal 1)-->decision{i small or equal n?}
+  decision{i small or equal  n?}-->|F|F[/output out/]
+  decision{i small or equal  n?}-->|T|T(out equal out multiplied i and i equal i plus 1)
+  T(out equal out multiplied i and i equal i plus 1)-->decision{i small or equal n?}
+  
+   ```
 11. Rewrite the following C program segement using the do/while structure
 ```c
 for( i=0 ' i<6 ; i++)
@@ -37,4 +53,5 @@ for( i=0 ' i<6 ; i++)
 12. 用迴圈寫一個C語言的費氏數列
    * my ans
     ```c
+    
     ```
