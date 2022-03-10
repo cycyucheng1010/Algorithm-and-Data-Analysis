@@ -29,7 +29,7 @@
 
    
 ### 9. what is the relationship between a program and an algrithm?
-   * prigrams = algrithms + data structures
+   * programs = algrithms + data structures
 ### 10. Determine what the following flow graph computes?
 
 ![image](https://user-images.githubusercontent.com/62127656/156815931-6743f55f-52ce-4992-9210-80d010acb01d.png)
