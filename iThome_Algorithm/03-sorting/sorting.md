@@ -193,3 +193,8 @@ for item in nums:
 quicksort(0,7)
 print()
 ```
+### Heap sort
+* 堆積排序最初要將n個數儲存到堆積中的時間是O(n log(n))。
+* 與氣泡排序、選擇排序、插入結構相比，堆積排序處理速度較快，但也因為這種複雜的資料結構，建置與維護變得複雜。
+## 結論
+![image](https://user-images.githubusercontent.com/62127656/158754346-08ad55d5-2df4-4507-99ff-dfe37820bafa.png)
